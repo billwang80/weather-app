@@ -25,13 +25,23 @@ function Weather({ date, position, weatherParam }) {
     const LOGIN_INFO = process.env.REACT_APP_WEATHER_USER + ':' + process.env.REACT_APP_WEATHER_PASS
 
     fetch(url, {
+      options: {
+        method: 'GET'
+      },
       headers: new Headers({
         'Authorization': 'Basic ' + btoa(LOGIN_INFO),
+        // "Access-Control-Allow-Headers": "*",
+        // "Access-Control-Allow-Origin": "*",
+        // "Access-Control-Allow-Methods": "*"  
       })
     }
     )
-    .then((response) => response.json())
+    .then((response) => {
+      // console.log(response)
+      return response.json()
+    })
     .then((data) => {
+      // console.log(data)
       const parsedDates = data.data[0].coordinates[0].dates.map(item => ({ x: new Date(item.date), y: item.value }))
       setData(parsedDates)
       setLoading(false)
