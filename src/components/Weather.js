@@ -25,14 +25,9 @@ function Weather({ date, position, weatherParam }) {
     const LOGIN_INFO = process.env.REACT_APP_WEATHER_USER + ':' + process.env.REACT_APP_WEATHER_PASS
 
     fetch(url, {
-      options: {
-        method: 'GET'
-      },
       headers: new Headers({
         'Authorization': 'Basic ' + btoa(LOGIN_INFO),
-        // "Access-Control-Allow-Headers": "*",
-        // "Access-Control-Allow-Origin": "*",
-        // "Access-Control-Allow-Methods": "*"  
+        'Content-Type': 'application/json'
       })
     }
     )
