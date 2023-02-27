@@ -1,0 +1,17 @@
+.param_select {
+  display: block;
+  margin: 0 auto;
+  margin-top: 8px;
+  padding: 8px 20px;
+  font-size: 20px;
+  font-family: inherit;
+  border: none;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+
+.param__header {
+  text-align: left;
+  /* margin-left: 20px; */
+  font-family: inherit;
+  font-size: 24px;
+}

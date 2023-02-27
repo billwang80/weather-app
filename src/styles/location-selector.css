@@ -1,0 +1,26 @@
+.map_container {
+  margin-top: 16px;
+  margin-left: 2%;
+  margin-bottom: 16px;
+  width: 60%;
+}
+
+.map_card {
+  margin-bottom: 8px;
+  border-radius: 8px;
+  background-color: #fff;
+  box-shadow: 1px 2px 10px rgba(0, 0, 0, .2);
+}
+
+.reset_button {
+  padding: 4px 8px;
+  background-color: white;
+  border: 0;
+  border-radius: 4px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  font-family: inherit;
+}
+
+.reset_button:hover {
+  box-shadow: 0 0 16px rgba(0, 0, 0, 0.3);
+}

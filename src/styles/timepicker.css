@@ -1,0 +1,138 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Segoe UI, Tahoma, sans-serif;
+}
+
+.Time input,
+.Time button {
+  font: inherit;
+}
+
+.Time header {
+  background-color: #323639;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  color: white;
+}
+
+.Time header h1 {
+  font-size: inherit;
+  margin: 0;
+}
+
+.Time__header {
+  text-align: left;
+  margin-left: 20px;
+  font-family: inherit;
+  font-size: 24px;
+  /* font-weight: bold; */
+}
+
+.Time__container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 10px;
+  padding-top: 0px;
+}
+
+.Time__container > * > * {
+  margin: 10px;
+}
+
+.Time__container__content {
+  width: 100%;
+  max-width: 1110px;
+  margin-top: calc(0.2em / -2);
+  margin-bottom: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
+  font-size: 19px;
+  /* box-shadow: 0 3px 10px rgb(0 0 0 / 0.4); */
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.react-datetimerange-picker__clear-button {
+  display: none;
+}
+.react-datetime-picker__inputGroup__divider {
+  display: none;
+}
+
+.react-datetimerange-picker {
+  display: inline-flex;
+  position: relative;
+  padding: 8px 16px;
+  /* padding-left: 16px;
+  padding-right: 16px; */
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+}
+.react-datetimerange-picker__wrapper {
+  display: flex;
+  flex-grow: 1;
+  flex-shrink: 0;
+  align-items: center;
+}
+.react-datetimerange-picker__inputGroup {
+  /* min-width: calc(4px + (4px * 3) + .54em * 6 + .217em * 2); */
+  flex-grow: 1;
+  /* display: flex; */
+  height: 100%;
+  padding: 0 2px;
+  /* align-items: baseline; */
+}
+.react-datetimerange-picker__inputGroup__input {
+  /* min-width: 40px; */
+  height: calc(100% - px);
+  position: relative;
+  border: 0;
+  background: none;
+  box-sizing: content-box;
+  border-bottom: 0.1px solid black;
+}
+.react-datetimerange-picker__inputGroup__month {
+  width: 24px !important;
+}
+.react-datetimerange-picker__inputGroup__day {
+  width: 24px !important;
+}
+.react-datetimerange-picker__inputGroup__year {
+  width: 48px !important;
+}
+.react-datetimerange-picker__inputGroup__hour {
+  display: none;
+  width: 32px !important;
+}
+.react-datetimerange-picker__inputGroup__minute {
+  display: none;
+  width: 32px !important;
+}
+.react-datetimerange-picker__range-divider {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+.react-datetimerange-picker__inputGroup__amPm {
+  display: none;
+}
+.react-datetimerange-picker__inputGroup__leadingZero {
+  display: none;
+}
