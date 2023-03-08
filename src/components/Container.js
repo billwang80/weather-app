@@ -15,6 +15,14 @@ function Container() {
   const [position, setPosition] = useState(defaultPosition)
   const [weatherParam, setWeatherParam] = useState("temp") // temp, wind, precip
 
+  const changeDate = dates => {
+    if (dates[0] > dates[1]) {
+      setDate([dates[0], dates[0]])
+    } else {
+      setDate(dates)
+    }
+  }
+
   return (
     <div>
       <Weather date={date} position={position} weatherParam={weatherParam} />
@@ -22,7 +30,7 @@ function Container() {
         <div className='selector-container'>
           <div className='flex-container'>
             <div className='flex-child'>
-              <TimePicker date={date} setDate={setDate} />
+              <TimePicker date={date} setDate={changeDate} />
             </div>
             <div className='flex-child'>
               <ParamPicker weatherParam={weatherParam} setWeatherParam={setWeatherParam} />
